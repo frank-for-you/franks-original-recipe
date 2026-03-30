@@ -1,0 +1,14 @@
+{
+  "name": "@frank-for-you/ambient-retrieval",
+  "version": "1.0.0",
+  "description": "Ambient context retrieval — wraps lossless-claw and injects QMD search results before each turn",
+  "type": "module",
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "peerDependencies": {
+    "openclaw": "*"
+  }
+}

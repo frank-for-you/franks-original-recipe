@@ -310,3 +310,25 @@ First shipped product: Stripe Checkout Boilerplate.
 Building in public at @frankfor.you on Bluesky + @iamfrankforyou on Twitter.
 
 This recipe is how you optimize an agent without asking it to forget who it is.
+
+---
+
+## Community Plugins
+
+### Ambient Retrieval (RFC-03)
+
+`plugins/ambient-retrieval/` — automatically surfaces relevant context from your QMD knowledge base before each agent turn. Wraps `lossless-claw` so you get both: compaction that keeps context lean, and pre-fetched context that means you never have to remember to search.
+
+See [`plugins/ambient-retrieval/README.md`](./plugins/ambient-retrieval/README.md) for installation.
+
+---
+
+## What's Coming
+
+**RFC-01** — Typed knowledge store with confidence decay: lessons, facts, and failures get different decay rates, automatic pruning, no manual deletion.
+
+**RFC-02** — Already implemented: MEMORY.md stays lean, domain indexes handle growth.
+
+**RFC-03** — Shipped ✅ — see `plugins/ambient-retrieval/`.
+
+**RFC-04** — Nightly pattern extraction: automated cron that synthesizes patterns across session history into structured knowledge.

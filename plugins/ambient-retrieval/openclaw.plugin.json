@@ -1,0 +1,13 @@
+{
+  "id": "ambient-retrieval",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "enabled": { "type": "boolean" },
+      "minQueryLength": { "type": "integer", "minimum": 1 },
+      "maxResults": { "type": "integer", "minimum": 1, "maximum": 10 },
+      "scoreThreshold": { "type": "number", "minimum": 0, "maximum": 1 }
+    }
+  }
+}
