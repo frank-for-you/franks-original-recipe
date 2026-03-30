@@ -9,6 +9,7 @@ Frank's Original Recipe is different. It gives you:
 - **Zero loss** of conversation history  
 - **100% identity preservation** — your agent stays authentically itself
 - **Lossless long sessions** — never silently drop old messages again
+- **Ambient retrieval** — relevant context auto-injected before every turn, no manual search needed
 
 And it's fully documented. Every step. Every measurement. Every decision.
 
@@ -51,6 +52,7 @@ Your agent stays itself. Just faster and cheaper.
 | `scripts/telegram-import.py` | **Headline feature** — backfill your entire Telegram chat history into lossless-claw |
 | `docs/telegram-import.md` | Full documentation for the import script: all flags, how-tos, FAQs, examples |
 | `templates/` | Example vault structure + template workspace files |
+| `plugins/ambient-retrieval/` | **RFC-03** — context engine plugin that auto-injects QMD search results before every turn |
 
 ---
 
@@ -65,6 +67,7 @@ Your agent stays itself. Just faster and cheaper.
 5. Follow Phase 3 (Telegram import) — backfill your conversation history into the DAG
 6. Follow Phase 4 (QMD) — index your personal knowledge base for full recall
 7. Use `scripts/audit.sh` before and after to measure your improvements
+8. **Optional:** Install `plugins/ambient-retrieval/` for automatic context injection on every turn
 
 **For new agents:**
 
